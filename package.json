@@ -19,7 +19,8 @@
   "homepage": "https://github.com/mmw/app-store-badge#readme",
   "dependencies": {
     "react": "^15.0.2",
-    "react-dom": "^15.0.2"
+    "react-dom": "^15.0.2",
+    "recompose": "^0.18.0"
   },
   "devDependencies": {
     "babel-core": "^6.8.0",

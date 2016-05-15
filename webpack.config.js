@@ -18,6 +18,6 @@ module.exports = {
     'react': 'React'
   },
   resolve: {
-    extensions: ['', 'js']
+    extensions: ['', '.js']
   }
 }
