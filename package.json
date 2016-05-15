@@ -4,7 +4,8 @@
   "description": "A simple react component for displaying a custom app store badge.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/webpack"
+    "build": "./node_modules/.bin/webpack",
+    "build-example": "./node_modules/.bin/webpack --config=webpack.example.config.js"
   },
   "repository": {
     "type": "git",
