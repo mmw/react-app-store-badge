@@ -1,0 +1,19 @@
+{
+  "name": "app-store-badge",
+  "version": "1.0.0",
+  "description": "A simple react component for displaying a custom app store badge.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmw/app-store-badge.git"
+  },
+  "bugs": {
+  "author": "Mateusz Wijas",
+  "license": "MIT",
+    "url": "https://github.com/mmw/app-store-badge/issues"
+  },
+  "homepage": "https://github.com/mmw/app-store-badge#readme"
+}
