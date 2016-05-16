@@ -42,7 +42,8 @@ function iconStyle(primaryColor) {
     fontSize: '40px',
     lineHeight: 1.3,
     position: 'relative',
-    left: '15px'
+    left: '15px',
+    top: '-3px'
   };
 }
 
@@ -59,7 +60,7 @@ function textHeadingStyle(primaryColor) {
 
 // Component
 
-export default function ReactAppStoreBadge({
+function ReactAppStoreBadge({
     url,
     icon,
     textHeading,
@@ -83,3 +84,5 @@ export default function ReactAppStoreBadge({
       </a>
     );
 }
+
+export default ReactAppStoreBadge;

@@ -10,7 +10,7 @@ To setup dev dependencies
 npm install
 ```
 
-To copy source file
+To build dist file
 ```bash
 npm run build
 ```
