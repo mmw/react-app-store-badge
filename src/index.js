@@ -2,16 +2,16 @@ import React from 'react';
 
 import {
   iconStyle,
-  textAppStoreStyle,
-  textHeadingStyle
-  wrapperStyle,
+  textHeadingStyle,
+  textStoreNameStyle,
+  wrapperStyle
 } from './styles';
 
-export default function AppStoreBadge({
+export default function ReactAppStoreBadge({
     url,
     icon,
     textHeading,
-    textAppStore,
+    textStoreName,
     primaryColor = "#ffffff",
     secondaryColor = "#000000"
   }) {
@@ -21,12 +21,12 @@ export default function AppStoreBadge({
         href={url}
         style={wrapperStyle(primaryColor, secondaryColor)}
       >
-        {icon}
+        <i style={iconStyle(primaryColor)}>{icon}</i>
         <span style={textHeadingStyle(primaryColor)}>
           {textHeading}
         </span>
-        <span style={textAppStoreStyle(primaryColor)}>
-          {textAppStore}
+        <span style={textStoreNameStyle(primaryColor)}>
+          {textStoreName}
         </span>
       </a>
     );

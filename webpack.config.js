@@ -2,20 +2,17 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'index.js',
-    path: __dirname + '/lib'
+    path: __dirname + '/dist'
   },
   module: {
     loaders: [{
       test: /\.js$/,
-      exclude: [/node_modules/, /example/],
+      include: /src/,
       loader: 'babel',
       query: {
         presets: ['es2015', 'react']
       }
     }]
-  },
-  externals: {
-    'react': 'React'
   },
   resolve: {
     extensions: ['', '.js']

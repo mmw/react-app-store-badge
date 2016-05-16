@@ -2,10 +2,10 @@
   "name": "react-app-store-badge",
   "version": "1.0.0",
   "description": "A simple react component for displaying a custom app store badge.",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "./node_modules/.bin/webpack",
-    "build-example": "./node_modules/.bin/webpack-dev-server --config=webpack.example.config.js --content-base example/"
+    "example": "./node_modules/.bin/webpack-dev-server --config=webpack.example.config.js --content-base example/"
   },
   "repository": {
     "type": "git",

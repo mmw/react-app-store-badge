@@ -17,7 +17,7 @@ function wrapperStyle(primaryColor, secondaryColor) {
   };
 }
 
-function textAppStoreStyle(primaryColor) {
+function textStoreNameStyle(primaryColor) {
   return {
     color: primaryColor,
     fontSize: '18px',
@@ -54,8 +54,8 @@ function textHeadingStyle(primaryColor) {
 }
 
 export {
-  wrapperStyle,
-  textAppStoreStyle,
   iconStyle,
-  textHeadingStyle
+  textHeadingStyle,
+  textStoreNameStyle,
+  wrapperStyle
 };

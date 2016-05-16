@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import AppStoreBadge from './index';
+import ReactAppStoreBadge from './index';
 
 function Example() {
   return (
     <div>
-      <AppStoreBadge url="123" />
+      <ReactAppStoreBadge
+        textHeading="Available on the"
+        textStoreName="App Store"
+        icon={<i>A</i>}
+        url="www.myappstoreplaceholder.com"
+      />
     </div>
   );
 }
