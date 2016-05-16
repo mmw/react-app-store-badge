@@ -1,14 +1,15 @@
 import React from 'react';
 
 import {
-  wrapperStyle,
-  textAppStoreStyle,
   iconStyle,
+  textAppStoreStyle,
   textHeadingStyle
+  wrapperStyle,
 } from './styles';
 
 export default function AppStoreBadge({
     url,
+    icon,
     textHeading,
     textAppStore,
     primaryColor = "#ffffff",
@@ -20,13 +21,12 @@ export default function AppStoreBadge({
         href={url}
         style={wrapperStyle(primaryColor, secondaryColor)}
       >
-        <i style={iconStyle(primaryColor)}>A</i>
-
+        {icon}
         <span style={textHeadingStyle(primaryColor)}>
-          {textHeading || 'Available on the'}
+          {textHeading}
         </span>
         <span style={textAppStoreStyle(primaryColor)}>
-          {textAppStore || 'App Store'}
+          {textAppStore}
         </span>
       </a>
     );

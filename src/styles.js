@@ -18,7 +18,7 @@ function wrapperStyle(primaryColor, secondaryColor) {
 }
 
 function textAppStoreStyle(primaryColor) {
-    return {
+  return {
     color: primaryColor,
     fontSize: '18px',
     boxSizing: 'border-box',
@@ -30,7 +30,7 @@ function textAppStoreStyle(primaryColor) {
 }
 
 function iconStyle(primaryColor) {
-    return {
+  return {
     color: primaryColor,
     display: 'block',
     boxSizing: 'border-box',
