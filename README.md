@@ -30,6 +30,13 @@ Provide your own _font based_ icon. For example using a tool like [fontello](htt
 
 _example:_
 
+install the package
+```bash
+npm install --save react-app-store-badge
+```
+
+then use within your project
+
 ```javascript
 import ReactAppStoreBadge from 'react-app-store-badge';
 // or
