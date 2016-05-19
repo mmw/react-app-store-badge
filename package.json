@@ -1,6 +1,6 @@
 {
   "name": "react-app-store-badge",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple react component for displaying a custom app store badge.",
   "main": "dist/index.js",
   "scripts": {
