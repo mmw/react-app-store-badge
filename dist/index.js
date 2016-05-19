@@ -79,10 +79,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    fontWeight: 'normal',
 	    fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif',
 	    height: '66px',
-	    marigin: '24px 12px 6px 0',
+	    margin: '24px 12px 6px 0',
 	    padding: '9px 0',
 	    textAlign: 'center',
 	    textDecoration: 'none',
+	    WebkitFontSmoothing: 'antialiased',
 	    width: '192px'
 	  };
 	}
