@@ -1,4 +1,5 @@
 import React from 'react';
+import merge from 'lodash/fp/merge';
 
 // Styles
 
@@ -67,19 +68,23 @@ function ReactAppStoreBadge({
     textHeading,
     textStoreName,
     primaryColor = "#ffffff",
-    secondaryColor = "#000000"
+    secondaryColor = "#000000",
+    wrapperStyleOverride,
+    iconStyleOverride,
+    textHeadingStyleOverride,
+    textStoreNameStyleOverride
   }) {
     return (
       <a
         className='ReactVendor--AppStoreButton'
         href={url}
-        style={wrapperStyle(primaryColor, secondaryColor)}
+        style={merge(wrapperStyle(primaryColor, secondaryColor), wrapperStyleOverride)}
       >
-        <i style={iconStyle(primaryColor)}>{icon}</i>
-        <span style={textHeadingStyle(primaryColor)}>
+        <i style={merge(iconStyle(primaryColor), iconStyleOverride)}>{icon}</i>
+        <span style={merge(textHeadingStyle(primaryColor), textHeadingStyleOverride)}>
           {textHeading}
         </span>
-        <span style={textStoreNameStyle(primaryColor)}>
+        <span style={merge(textStoreNameStyle(primaryColor), textStoreNameStyleOverride)}>
           {textStoreName}
         </span>
       </a>
