@@ -11,6 +11,7 @@ function Example() {
         textStoreName="App Store"
         icon={<i>A</i>}
         url="www.myappstoreplaceholder.com"
+        wrapperStyleOverride={{ fontFamily: "monospace" }}
       />
     </div>
   );

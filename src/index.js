@@ -1,4 +1,5 @@
 import React from 'react';
+import merge from 'lodash/fp/merge';
 
 // Styles
 
@@ -13,10 +14,11 @@ function wrapperStyle(primaryColor, secondaryColor) {
     fontWeight: 'normal',
     fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif',
     height: '66px',
-    marigin: '24px 12px 6px 0',
+    margin: '24px 12px 6px 0',
     padding: '9px 0',
     textAlign: 'center',
     textDecoration: 'none',
+    WebkitFontSmoothing: 'antialiased',
     width: '192px'
   };
 }
@@ -66,19 +68,23 @@ function ReactAppStoreBadge({
     textHeading,
     textStoreName,
     primaryColor = "#ffffff",
-    secondaryColor = "#000000"
+    secondaryColor = "#000000",
+    wrapperStyleOverride,
+    iconStyleOverride,
+    textHeadingStyleOverride,
+    textStoreNameStyleOverride
   }) {
     return (
       <a
         className='ReactVendor--AppStoreButton'
         href={url}
-        style={wrapperStyle(primaryColor, secondaryColor)}
+        style={merge(wrapperStyle(primaryColor, secondaryColor), wrapperStyleOverride)}
       >
-        <i style={iconStyle(primaryColor)}>{icon}</i>
-        <span style={textHeadingStyle(primaryColor)}>
+        <i style={merge(iconStyle(primaryColor), iconStyleOverride)}>{icon}</i>
+        <span style={merge(textHeadingStyle(primaryColor), textHeadingStyleOverride)}>
           {textHeading}
         </span>
-        <span style={textStoreNameStyle(primaryColor)}>
+        <span style={merge(textStoreNameStyle(primaryColor), textStoreNameStyleOverride)}>
           {textStoreName}
         </span>
       </a>
